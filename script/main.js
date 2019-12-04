@@ -1,8 +1,15 @@
 
-var score_one = 0;
-var score_two = 0;
-var player = "one";
+// const backgroundSound = new Audio("tic-tac.mp3")
+// const audio = new Audio('#')
+
+
+
+// backgroundSound.play()
+let score_one = 0;
+let score_two = 0;
+let player = "one";
 function oneWinner() {
+	
 	if( $(".game div div.top-left, .game div div.top-center,.game div div.top-right").children(".x").length === 3 ){
 			console.log("Palyer One Won");
 			score_one++;
@@ -198,27 +205,27 @@ function playAgain() {
 $(function() {
 
 	
-	$(".container .playertwo h2, .container .playertwo img").css({"opacity":".7", "transform":"scale(.8,.8)"});
+	$(".container .playertwo h2, .container .playertwo img").css({"opacity":".7", "transform":"scale(.8,.8)"}); // transform min scale like zoom in or out  
 	$(".game div div").click(function() {
-
+		// audio.play()
 		if( $(".container").css("cursor") === "not-allowed") {
 
 			alert("The Game is Over");
 
 		} else {
-			if( $(this).children('img').length === 0) {
-						if(player === "one") {
-							$(this).append("<img class='x' src='../images/x.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >");
-							player = "two";
-							$(".container .playerone h2, .container .playerone img").css({"opacity":".7", "transform":"scale(.8,.8)"});
-							$(".container .playertwo h2, .container .playertwo img").css({"opacity":"1", "transform":"scale(1,1)"});
+			if( $(this).children('img').length === 0) { // to check if there is value or no 
+						if(player === "one") { // print x
+							$(this).append("<img class='x' src='../images/x.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >"); // width and height ='"+$(this).css("width") to be fit with the div 
+							player = "two";    // print o 
+							$(".container .playerone h2, .container .playerone img").css({"opacity":".7", "transform":"scale(.8,.8)"}); // slip 
+							$(".container .playertwo h2, .container .playertwo img").css({"opacity":"1", "transform":"scale(1,1)"});    // slip 
 
 							oneWinner();
 
 
 
 						}else {
-							$(this).append("<img class='o' src='../images/o.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >");
+							$(this).append("<img class='o' src='../images/o.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >"); // to show img with click in table 
 							player = "one";
 							$(".container .playerone h2, .container .playerone img").css({"opacity":"1", "transform":"scale(1,1)"});
 							$(".container .playertwo h2, .container .playertwo img").css({"opacity":".7", "transform":"scale(.8,.8)"});
