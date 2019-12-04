@@ -1,0 +1,229 @@
+
+/* container of game have 3 div  */
+.container {   
+	height: 400px;
+	background: #fff;
+	width: 900px;
+	margin: 100px auto; 
+	/* to  auto make container in middle  */
+	border-radius: 5px;
+}	
+.container h3 {
+	text-align: center;
+	padding-top: 10px;
+}
+.container h3 span {
+	font-weight: bold;
+	color: #a00c0c;
+}
+.container div {
+	float: left;
+	/* to make all div left in one line  */
+}
+.container .playerone {
+	width: 25%;
+	margin-left: 3%;
+	margin-top: 30px;
+}
+
+.container .game {
+	width: 40%;
+	text-align: center;
+	height: 300px;
+	border: 1px solid #434343;
+	margin-top: 20px;
+	border-radius: 2px;
+}
+.container .game .top-row {
+	width: 100%;
+	height: 33%;
+	border-bottom: 1px solid #434343;;
+}
+.container .game .top-row div {
+	width: 33%;
+	border-right: 1px solid #434343;;
+	height: 100%;
+}
+.container .game .top-row div:nth-child(3) {
+	border-right: none;
+}
+
+.container .game .center-row {
+	width: 100%;
+	height: 33%;
+	border-bottom: 1px solid #434343;;
+}
+.container .game .center-row div {
+	width: 33%;
+	border-right: 1px solid #434343;;
+	height: 100%;
+}
+.container .game .center-row div:nth-child(3) {
+	border-right: none;
+}
+
+.container .game .bottom-row {
+	width: 100%;
+	height: 33%;
+}
+.container .game .bottom-row div {
+	width: 33%;
+	border-right: 1px solid #434343;;
+	height: 100%;
+}
+.container .game .bottom-row div:nth-child(3) {
+	border-right: none;
+}
+.container .game .top-row div, 
+.container .game .center-row div, 
+.container .game .bottom-row div {
+
+	transition: .3s ease-in-out;
+
+}
+.container .playerone h2,
+.container .playertwo h2,
+.container .playerone img,
+.container .playertwo img {
+	transition: .3s ease-in-out;
+}
+
+.container .game .top-row div:hover, 
+.container .game .center-row div:hover, 
+.container .game .bottom-row div:hover {
+
+	cursor: pointer;
+	background: #908f8f;
+
+}
+
+.container .playertwo {
+	width: 25%;
+	text-align: right;
+	margin-right: 3%;
+	margin-top: 30px;
+	margin-left: 3%;
+}
+
+
+/* Scores */
+
+.container .playerone img {
+	display: block;
+}
+.container .playerone span.score-one {
+	display: inline-block;
+	margin-top: 60px;
+	padding: 20px 30px;
+	background: #A00C0C;
+	margin-left: 10px;
+	font-size: 20px;
+	border-radius: 2px;
+	color: #fff;
+}
+
+
+.container .playertwo img {
+	display: block;
+	margin-left: 120px;
+}
+.container .playertwo span.score-two {
+	display: inline-block;
+	margin-top: 60px;
+	padding: 20px 30px;
+	background: #25408A;
+	margin-right: 10px;
+	font-size: 20px;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.container .playerone h4,
+.container .playertwo h4 {
+	position: absolute;
+	color: green;
+	font-size: 18px;
+	display: none;
+}
+
+.container .playerone h4 {
+	left: 275px
+}
+
+.container .playertwo h4 {
+	right: 280px;
+}
+
+.container h3 ,span {
+animation: shiftColor 3s 2;
+}
+
+
+
+/* Buttons */
+
+.buttons {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: -70px;
+}
+.buttons button {
+	color: #fff;
+	background: #A00C0C;
+	border: none;
+	font-size: 17px;
+	padding: 10px 5px;
+	min-width: 130px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+.buttons button:hover {
+
+	background: #af0a0a;
+}
+
+.buttons button:nth-child(1) {
+
+	margin-right: 5px;
+
+}
+
+.buttons button:nth-child(2) {
+	margin-left: 5px;
+}
+
+.buttons button.disable {
+	color: grey;
+	cursor: not-allowed;
+}
+.buttons button.disable:hover {
+	background: #A00C0C;
+}
+
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	background: url(../images/1.jpg);
+}
+
+body h1 {
+	position: absolute;
+	top: 0;
+	left: 600px;
+	color: orange;
+	display: none;
+}
+
+
+
+@keyframes shiftColor {
+    from {
+      color:( #A00C0C);
+    }
+  
+    to {
+      color:( #25408A);
+    }
+  }
