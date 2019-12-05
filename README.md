@@ -48,13 +48,12 @@ Store each move in an array.
 # Describe any lines in the code
 side note: this function was written on the last day to replace three ones that were used before
 
-if( $(this).children('img').length === 0) {              // to check if there are values or no 
-if(player === "one") {                                  // print x
-$(this).append("<img class='x' src='../images/x.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >");                        // width and height ='"+$(this).css("width") to be fit with the div 
-player = "two";    // print o 
-$(".container .playerone h2, .container .playerone img").css({"opacity":".7", "transform":"scale(.8,.8)"}); 
-// slip x
-$(".container .playertwo h2, .container .playertwo img").css({"opacity":"1", "transform":"scale(1,1)"});    // slip o
+I have five function :
+1. function oneWinner() // eight options to be x 
+2. function twoWinner() // eight options to be o 
+3. function restart()  
+4. function playAgain() 
+5. $(function()  // function anonymous
 
 
 
