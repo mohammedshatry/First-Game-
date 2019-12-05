@@ -215,7 +215,7 @@ $(function() {
 		} else {
 			if( $(this).children('img').length === 0) { // to check if there is value or no 
 						if(player === "one") { // print x
-							$(this).append("<img class='x' src='../images/x.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >"); // width and height ='"+$(this).css("width") to be fit with the div 
+							$(this).append("<img class='x' src='script/../images/x.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >"); // width and height ='"+$(this).css("width") to be fit with the div 
 							player = "two";    // print o 
 							$(".container .playerone h2, .container .playerone img").css({"opacity":".7", "transform":"scale(.8,.8)"}); // slip 
 							$(".container .playertwo h2, .container .playertwo img").css({"opacity":"1", "transform":"scale(1,1)"});    // slip 
