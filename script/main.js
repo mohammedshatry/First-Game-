@@ -225,7 +225,7 @@ $(function() {
 
 
 						}else {
-							$(this).append("<img class='o' src='../images/o.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >"); // to show img with click in table 
+							$(this).append("<img class='o' src='script/../images/o.jpg' width='"+$(this).css("width")+"' height='"+$(this).css("height")+"' >"); // to show img with click in table 
 							player = "one";
 							$(".container .playerone h2, .container .playerone img").css({"opacity":"1", "transform":"scale(1,1)"});
 							$(".container .playertwo h2, .container .playertwo img").css({"opacity":".7", "transform":"scale(.8,.8)"});
