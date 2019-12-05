@@ -48,7 +48,7 @@ Store each move in an array.
 # Describe any lines in the code
 side note: this function was written on the last day to replace three ones that were used before
 
-I have five function :
+I have five functions :
 1. function oneWinner() // eight options to be x 
 2. function twoWinner() // eight options to be o 
 3. function restart()  
