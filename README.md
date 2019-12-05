@@ -67,7 +67,7 @@ How to determine the correct boxs like when boxs matched or not.
 
 
 
-[Github](https://mohammedshatry.github.io/First-Game-/)
+[Game Link ](https://mohammedshatry.github.io/First-Game-/)
 
 <!-- images   -->
 
