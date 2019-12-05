@@ -13,7 +13,7 @@ function oneWinner() {
 	if( $(".game div div.top-left, .game div div.top-center,.game div div.top-right").children(".x").length === 3 ){
 			console.log("Palyer One Won");
 			score_one++;
-			$(".disable").removeClass("disable");
+			$(".disable").removeClass("disable"); // to open play 
 			$(".again").prop("disabled", false);
 			$(".container, .game div div").css("cursor","not-allowed");
 			$(".container .playerone h4").css("display","block");
@@ -181,7 +181,7 @@ function restart() {
 	$(".game div div").css("cursor","pointer");
 	$(".container").css("cursor","unset");
 
-	$(".container .playerone h4").css("display","none");
+	$(".container .playerone h4").css("display","none"); // remove x and o from table 
 	$(".container .playertwo h4").css("display","none");
 }
 
@@ -210,7 +210,7 @@ $(function() {
 		// audio.play()
 		if( $(".container").css("cursor") === "not-allowed") {
 
-			alert("The Game is Over");
+			alert("The Game is Over"); // 
 
 		} else {
 			if( $(this).children('img').length === 0) { // to check if there is value or no 
