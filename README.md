@@ -67,12 +67,8 @@ How to determine the correct boxs like when boxs matched or not.
 
 
 
-[google](http://google.com)
+[Github](https://mohammedshatry.github.io/First-Game-/)
 
 <!-- images   -->
 
-![wireframe](http://google.com)
 
-
-js
-let name ='shatry'
